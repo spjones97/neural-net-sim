@@ -1,3 +1,5 @@
-import Enzyme from "enzyme";
+import * as Enzyme from "enzyme";
 import Adapter from "enzyme-adapter-react-16";
-Enzyme.configure({ adapter: new Adapter() });
+
+// tslint:disable-next-line:no-any
+(Enzyme as any).configure({ adapter: new Adapter() });
